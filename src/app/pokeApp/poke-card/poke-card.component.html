@@ -1,0 +1,30 @@
+<mat-card class="mt-2 mb-4 custom-image-card-figth styled-element">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{
+      first? msgOnView.INFORMATIO_POKEMON.fistPokemon: msgOnView.INFORMATIO_POKEMON.secondPokemon
+    }}</mat-card-title>
+    <mat-card-subtitle style="color: white">{{
+      pokemon
+        ? pokemon.name
+        : (msgOnView.INFORMATIO_POKEMON.cardPokemon | titlecase)
+    }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    class="col-12 img-fluid custom-image mb-4"
+    mat-card-image
+    [src]="
+      pokemon
+        ? pokemon.sprites.front_default
+        :(      first?  msgOnView.IMG.first_pokemon_dafult:  msgOnView.IMG.second_pokemon_dafult)
+    "
+  />
+  <div class="mt-4" *ngIf="pokemon && pokemon && pokemon.types">
+    <h3>{{ msgOnView.INFORMATIO_POKEMON.typesPokemon }}</h3>
+    <mat-chip-listbox>
+      <mat-chip *ngFor="let type of pokemon.types">
+        {{ type.type.name | titlecase }}
+      </mat-chip>
+    </mat-chip-listbox>
+  </div>
+</mat-card>

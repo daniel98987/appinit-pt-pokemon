@@ -1,59 +1,38 @@
-# PokeApiAppinit
+*Run de la aplicación
+    -Angular 19.0.0
+    -node: 20.14.0
+    -npm i sobre el proyecto
+    -ng s 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
 
-## Development server
 
-To start a local development server, run:
+A continuación se detallan tanto las funcionalidades del aplicativo como sus instrucciones.
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+*Experiencia de sonido: Por favor dar clic cuando se ingrese al aplicativo para escuchar los sonidos configurados,
+ya que los navegadores tienen su respectiva políticas de seguridad.
 
-## Code scaffolding
+se recomienda un volumen medio.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+*Ver información Pokémon: Para ver la información de clic en el nombre del Pokémon .
 
-```bash
-ng generate component component-name
-```
+*Filtro: El filtro "filter Pokémon" filtrará según las letras que coincidan con el Pokémon.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+*Spineer:Cada vez que se realice una petición htpp saldra un spineer en espera de la respuesta del servidor
+sera capaz de seleccionar los tipos de pokemones que se desean filtrar.
 
-```bash
-ng generate --help
-```
+*Paginador
 
-## Building
+*Uso de redux para el estado de sesión
 
-To build the project run:
+*Consumo de api pokenon
 
-```bash
-ng build
-```
+*Batalla pokemon
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1) seleccionar dos pokemones de la lista observada, para esto dar clic en la imagen del pokemon.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+2) Aparecerán dos botones el primero para volver a jugar "play again" y el segundo "Information of battle", desplegara una pantalla emergente la cual mostrara los criterios necesarior para dar el resultado a la batalla, además un criterio que se utilizó para el daño tanto no_damage_from y  no_damage_to son determinantes fueron determinantes para seguir evaluando los demás tipos de daños o no, ya que estos determinan si un Pokémon puede recibir o atacar daño de otro Pokémon.
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

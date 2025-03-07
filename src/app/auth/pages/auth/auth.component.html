@@ -1,0 +1,45 @@
+<div class="fondo-pokemon">
+  <div class="container d-flex align-items-center justify-content-center vh-100">
+    <div class="row w-100 justify-content-center">
+      <div class="col-12 col-sm-8 col-lg-4">
+        <mat-card class="p-4 shadow">
+          <h1 class="text-center mb-3" style="color: #00C8C8;">
+            {{ 'login' | translate }}
+          </h1>
+          <img src="../../../assets/images/pokemon.png" 
+               class="mb-3"
+               alt="Pokemon Logo" 
+               width="50" 
+               height="50" 
+               style="display: block; margin: auto;">
+
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>{{ 'email_label' | translate }}</mat-label>
+              <input matInput type="email" formControlName="email">
+              <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+                {{ 'email_error' | translate }}
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>{{ 'password_label' | translate }}</mat-label>
+              <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password">
+              <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword">
+                <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+              </button>
+              <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                {{ 'password_error' | translate }}
+              </mat-error>
+            </mat-form-field>
+  
+            <button mat-raised-button color="primary" class="w-100 mt-3" type="submit" [disabled]="loginForm.invalid">
+              {{ 'submitButton' | translate }}
+            </button>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
