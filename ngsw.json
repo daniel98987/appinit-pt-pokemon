@@ -1,0 +1,103 @@
+{
+  "configVersion": 1,
+  "timestamp": 1742423502521,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/chunk-JOECHJVF.js",
+        "/chunk-YSQPIJW2.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main-LGEBFOXM.js",
+        "/manifest.webmanifest",
+        "/polyfills-FFHMD2TL.js",
+        "/styles-52WF6A3K.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/images/025.png",
+        "/assets/images/143.png",
+        "/assets/images/angry-pokemon.png",
+        "/assets/images/drawing.png",
+        "/assets/images/figth.png",
+        "/assets/images/fondo.jpg",
+        "/assets/images/loser.png",
+        "/assets/images/pokemon.png",
+        "/assets/images/win.png",
+        "/icons/icon-128x128.png",
+        "/icons/icon-144x144.png",
+        "/icons/icon-152x152.png",
+        "/icons/icon-192x192.png",
+        "/icons/icon-384x384.png",
+        "/icons/icon-512x512.png",
+        "/icons/icon-72x72.png",
+        "/icons/icon-96x96.png",
+        "/media/fondo-IMPWFZYA.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/images/025.png": "b112240b3c3fe24dabc77b1315649f3224c22999",
+    "/assets/images/143.png": "0fe7745e2b8516fdf8ba22c8b33378722105be0b",
+    "/assets/images/angry-pokemon.png": "a929886c76500911dc48fdff6990a0a2bca352e7",
+    "/assets/images/drawing.png": "26cab63350ce10cf9546f18a8f728ed75aca8551",
+    "/assets/images/figth.png": "dc73f017513fbdf354520faccd356ced47a8ee96",
+    "/assets/images/fondo.jpg": "4231f6222dd1f9c694316fd177efc9aab2593d61",
+    "/assets/images/loser.png": "bab9ef0c15d95bbc54adbad99b5bbacd343bff74",
+    "/assets/images/pokemon.png": "2b17892f0736372f3ee0469862d4f44e71028f99",
+    "/assets/images/win.png": "cf955d33cf5a8dcc66c402a1ee3a0263051c7d4e",
+    "/chunk-JOECHJVF.js": "910d387f7159b9a1e23ff2e3baab66342e665e96",
+    "/chunk-YSQPIJW2.js": "22cc0382769c9d0201019a421baedb4eca60003f",
+    "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/index.html": "9ba8b63aedaf38fb84c716e501b1beaafb7b1886",
+    "/main-LGEBFOXM.js": "e6bae465f7757b3f6cdeb5d48b78e09bad4eb9f2",
+    "/manifest.webmanifest": "bc94c5a921897b053439c2997eaeb61d84475aa9",
+    "/media/fondo-IMPWFZYA.jpg": "4231f6222dd1f9c694316fd177efc9aab2593d61",
+    "/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "/styles-52WF6A3K.css": "26e99687073bfa5664d299f14df59f42d88b9f0c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
